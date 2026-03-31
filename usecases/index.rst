@@ -1,4 +1,4 @@
-Rosalind usecases
+Rosalind Usecases
 #################
 
 .. toctree::
