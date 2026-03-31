@@ -12,7 +12,7 @@
    the project's root folder.
 
     ```bash
-    cd rosalind-docs
+    cd rosalind
     # Note you can use other options besides "html" here (e.g. "latex").
     # Simply run "make" to see all available options.
     make html
