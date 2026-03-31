@@ -77,7 +77,60 @@ SFTP
         - Remove an empty directory
       * - rm
         - Delete a file
-  
+
+  Example
+
+  .. code-block:: bash
+
+    C:\Users\fmlast01> sftp fmlast01@rosalind.rc.louisville.edu
+    This system is the property of the University of Louisville.
+
+    Use of the system is for authorized users only. It is the policy of the
+    University to protect and safeguard the protected health information,
+    created, acquired and maintained in accordance with the Privacy
+    Regulations promulgated pursuant to the Health Insurance Portability
+    and Accountability Act of 1996 and all applicable state laws.
+
+    Use of your account constitutes your approval and acceptance of this
+    agreement. Acceptance of this agreement is a condition of use.
+
+    IMPORTANT!
+
+    USER DOCUMENTATION: https://ularc.github.io/rosalind/
+
+    Please type your University of Louisville password.
+    REMARK: Even if you don't see any characters in the
+    prompt, your input is recorded.
+
+    AFTER TYPING YOUR PASSWORD, check your phone for a
+    DUO prompt.
+
+    fmlast01@rosalind.rc.louisville.edu's password:
+    Autopushing login request to phone...
+    Success. Logging you in...
+    Connected to rosalind.rc.louisville.edu.
+    sftp> 
+    sftp> pwd
+    Remote working directory: /mnt/rosalind/private/fmlast01
+    sftp> 
+    sftp> ls
+    sftp> 
+    sftp> put C:\Users\fmlast01\Downloads\Image.jpg .
+    Uploading C:/Users/fmlast01/Downloads/Image.jpg to /mnt/rosalind/private/fmlast01/./Image.jpg
+    Image.jpg                                                                                                                        100% 7912KB   1.5MB/s   00:05
+    sftp> 
+    sftp> get /mnt/Rosalind/private/fmlast01/./Image.jpg .\mytestimage.jpg
+    Fetching /mnt/rosalind/private/fmlast01/./Image.jpg to ./mytestimage.jpg
+    Image.jpg                                                                                                                        100% 7912KB 517.7KB/s   00:15
+    sftp> 
+    sftp> ls
+    Image.jpg
+    sftp> 
+    sftp> pwd
+    Remote working directory: /mnt/rosalind/private/fmlast01
+    sftp> 
+    sftp> exit
+
 SSH
 ---
   #. Open your SSH client of choice (or a terminal session)
