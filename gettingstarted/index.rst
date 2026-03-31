@@ -17,7 +17,7 @@ There are a couple of ways to connect and utilize the Rosalind system. Please no
 SFTP
 ----
 
-**Client**
+**Client - Preferred**
 
   #. Open your preferred SFTP client (e.g., CyberDuck and Filezilla)
   
